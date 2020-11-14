@@ -236,7 +236,7 @@ function love.draw()
         love.graphics.setFont(largeFont)
         love.graphics.printf("Welcome to Pong!", 0, 5, VIRTUAL_WIDTH, 'center')
         love.graphics.setFont(smallFont)
-        love.graphics.printf("Enter 1 for the P vs P, 2 for the P vs CPU, or 3 for CPU vs CPU", 0, 32, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf("Enter 1 for P vs P, 2 for P vs CPU, or 3 for CPU vs CPU", 0, 32, VIRTUAL_WIDTH, 'center')
     elseif gameState == 'pvp' then
         love.graphics.printf("You have chosen: Player vs Player", 0, 20, VIRTUAL_WIDTH, 'center')
         love.graphics.printf("Press Enter to Continue or Backspace to Return to Menu", 0, 32, VIRTUAL_WIDTH, 'center')
