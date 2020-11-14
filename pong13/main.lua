@@ -11,7 +11,7 @@ VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
 PADDLE_SPEED = 200
-MOMENTUM = 1.25
+MOMENTUM = 1.1
 
 function love.load()
     love.graphics.setDefaultFilter('nearest', 'nearest')
@@ -79,7 +79,7 @@ function love.update(dt)
 
             ball:reset()
             
-            if player2Score >= 3 then
+            if player2Score >= 10 then
                 gameState ='victory'
                 winningPlayer = 2
             else
@@ -95,7 +95,7 @@ function love.update(dt)
 
             ball:reset()
             
-            if player1Score >= 3 then
+            if player1Score >= 10 then
                 gameState ='victory'
                 winningPlayer = 1
             else
